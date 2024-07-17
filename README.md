@@ -8,7 +8,7 @@ FundMe is a decentralized crowd-sourcing application built on Ethereum using Sol
 - **Minimum Contribution**: Enforces a minimum contribution amount in USD using Chainlink's Price Feed.
 - **Gas Optimization**: Includes a gas-optimized withdraw function.
 
-### Prerequisites
+## Prerequisites
 
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - [Foundry](https://getfoundry.sh/)
