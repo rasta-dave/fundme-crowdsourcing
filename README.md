@@ -1,66 +1,34 @@
-## Foundry
+# FundMe - A Crowd-Sourcing Smart Contract
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+FundMe is a decentralized crowd-sourcing application built on Ethereum using Solidity. This smart contract allows users to contribute funds, which only the contract owner can withdraw. The contract also uses Chainlink's Price Feed to set a minimum funding amount in USD.
 
-Foundry consists of:
+## Features
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+- **Secure Funding**: Only the owner of the contract can withdraw the funds.
+- **Minimum Contribution**: Enforces a minimum contribution amount in USD using Chainlink's Price Feed.
+- **Gas Optimization**: Includes a gas-optimized withdraw function.
 
-## Documentation
+### Prerequisites
 
-https://book.getfoundry.sh/
+- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- [Foundry](https://getfoundry.sh/)
+
+### Installation
+
+   **Clone the Repository**
+    ```sh
+    git clone https://github.com/rasta-dave/foundry-fund-me-f23
+    cd FundMe
+    make
+    ```
+`
 
 ## Usage
 
-### Build
+### Fund the Contract
 
-```shell
-$ forge build
-```
+Users can fund the contract by sending ETH directly to it or by calling the `fund` function.
 
-### Test
+### Withdraw Funds
 
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+Only the owner of the contract can withdraw funds using the `withdraw` or `cheaperWithdraw` function.
