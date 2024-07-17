@@ -16,12 +16,12 @@ FundMe is a decentralized crowd-sourcing application built on Ethereum using Sol
 ### Installation
 
    **Clone the Repository**
-    ```sh
+    ```
     git clone https://github.com/rasta-dave/foundry-fund-me-f23
     cd FundMe
     make
     ```
-`
+
 
 ## Usage
 
