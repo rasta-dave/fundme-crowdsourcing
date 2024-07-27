@@ -18,7 +18,7 @@ FundMe is a decentralized crowd-sourcing application built on Ethereum using Sol
 
 ```
 git clone https://github.com/rasta-dave/FundMe-Crowdsourcing
-cd foundry-fund-me-cu
+cd FundMe-Crowdsourcing
 make
 ```
 
