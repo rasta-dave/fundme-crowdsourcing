@@ -1,5 +1,8 @@
 # FundMe - A Crowd-Sourcing Smart Contract
 
+Credit goes to Patrick Collins @ Cyfrin for making this code available on his Youtube channel where he teaches this incredible stuff
+
+
 FundMe is a decentralized crowd-sourcing application built on Ethereum using Solidity. This smart contract allows users to contribute funds, which only the contract owner can withdraw. The contract also uses Chainlink's Price Feed to set a minimum funding amount in USD.
 
 ## Features
